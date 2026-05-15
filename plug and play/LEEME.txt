@@ -1,0 +1,40 @@
+============================================================
+ COMPRESSER · uso plug and play
+============================================================
+
+Opcion A: USO BASICO (la mas simple)
+------------------------------------
+1. Doble click en Compresser.exe
+2. Arrastra uno o varios videos a la ventana
+   (o cliquea para elegir)
+3. Elegi calidad: Alta / Balanceado / Maximo ahorro
+4. Click en "Comprimir"
+5. Esperar (te avisa con notificacion cuando termina)
+
+Opcion B: MENU CONTEXTUAL (recomendado)
+---------------------------------------
+1. Doble click en register_context_menu.bat (una sola vez)
+2. Listo. Ahora podes hacer:
+   - Click derecho en cualquier video → "Comprimir con Compresser"
+   - Seleccionar varios y click derecho → carga todos en cola
+
+   En Windows 11 puede aparecer dentro de "Mostrar mas opciones".
+
+Para sacar el menu contextual: unregister_context_menu.bat
+
+============================================================
+ NOTAS
+============================================================
+
+- Funciona en Windows 10/11 64-bit. No necesita admin.
+- No necesita instalar Python, ffmpeg ni nada. Todo embebido.
+- Si tenes GPU NVIDIA: usa NVENC, 4x mas rapido.
+- Si no, fallback automatico a CPU (libx264).
+- Logs por sesion en la carpeta "logs/" (al lado del .exe).
+- Configuracion (carpeta de salida) en config.json.
+- Si moves el .exe a otra carpeta, volve a correr
+  register_context_menu.bat desde la nueva ubicacion.
+
+============================================================
+ Mas info: https://github.com/facukoren/compresser
+============================================================
