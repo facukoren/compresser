@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# ffmpeg (descargado/embebido en runtime, 170 MB)
+ffmpeg/ffmpeg.exe
+ffmpeg/ffprobe.exe
+ffmpeg/*.zip
+
+# Datos locales del usuario
+logs/
+config.json
+videos/
+
+# Test artefactos
+test_standalone/
+test_*.mp4
+queue_test_*.mp4
+cli_test.mp4
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
